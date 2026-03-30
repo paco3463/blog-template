@@ -1,0 +1,477 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">\
+    <style>\
+        /* LUXURY DESIGN TOKENS */\
+        :root \{\
+            --at-gold: #c5a059;\
+            --at-black: #000000;\
+            --at-dark: #121212;\
+            --at-gray: #888888;\
+            --at-soft-bg: #f9f8f6;\
+            --at-border: #e2e2e2;\
+            --font-serif: 'Playfair Display', serif;\
+            --font-sans: 'Montserrat', sans-serif;\
+            --transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);\
+        \}\
+\
+        body \{\
+            margin: 0;\
+            padding: 0;\
+            background-color: #fff;\
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");\
+            -webkit-font-smoothing: antialiased;\
+            color: var(--at-black);\
+            overflow-x: hidden;\
+        \}\
+\
+        /* ANIMATED ARCHITECTURAL OUTLINE - FASTER FADE */\
+        .at-bg-artwork \{\
+            position: fixed;\
+            top: 15%;\
+            right: -5%;\
+            width: 60vw;\
+            height: auto;\
+            z-index: -1;\
+            pointer-events: none;\
+            /* Animation shortened to 5s total */\
+            animation: fadeOutHome 5s ease-in-out forwards;\
+        \}\
+\
+        .at-outline-path \{\
+            stroke-dasharray: 1000;\
+            stroke-dashoffset: 1000;\
+            /* Drawing phase shortened to 2s */\
+            animation: drawLine 2s ease-in-out forwards;\
+            stroke: var(--at-gold);\
+            stroke-width: 0.4;\
+            fill: none;\
+        \}\
+\
+        @keyframes drawLine \{\
+            to \{ stroke-dashoffset: 0; \}\
+        \}\
+\
+        @keyframes fadeOutHome \{\
+            0% \{ opacity: 0; transform: translateY(10px); \}\
+            20% \{ opacity: 0.18; transform: translateY(0); \}\
+            60% \{ opacity: 0.18; \}\
+            100% \{ opacity: 0; transform: translateY(-10px); visibility: hidden; \}\
+        \}\
+\
+        /* ORNAMENTAL ACCENTS */\
+        .at-corner-accent \{\
+            position: absolute;\
+            width: 40px;\
+            height: 40px;\
+            border: 1px solid var(--at-gold);\
+            pointer-events: none;\
+        \}\
+        .at-top-left \{ top: 0; left: 0; border-right: none; border-bottom: none; \}\
+        .at-bottom-right \{ bottom: 0; right: 0; border-left: none; border-top: none; \}\
+\
+        /* LAYOUT STRUCTURE */\
+        .at-wrapper \{\
+            max-width: 1400px;\
+            margin: 0 auto;\
+            padding: 100px 60px;\
+            display: grid;\
+            grid-template-columns: 1fr 340px;\
+            gap: 100px;\
+        \}\
+\
+        @media (max-width: 1024px) \{\
+            .at-wrapper \{ grid-template-columns: 1fr; padding: 60px 25px; gap: 60px; \}\
+            .at-sidebar \{ display: none; \}\
+            .at-bg-artwork \{ width: 120vw; top: 10%; right: -10%; \}\
+        \}\
+\
+        /* ARTICLE HEADER */\
+        .at-header \{\
+            text-align: center;\
+            max-width: 1000px;\
+            margin: 0 auto 100px auto;\
+            position: relative;\
+        \}\
+\
+        .at-eyebrow \{\
+            font-family: var(--font-sans);\
+            text-transform: uppercase;\
+            letter-spacing: 8px;\
+            font-size: 10px;\
+            color: var(--at-gold);\
+            font-weight: 600;\
+            display: block;\
+            margin-bottom: 30px;\
+        \}\
+\
+        .at-title \{\
+            font-family: var(--font-serif);\
+            font-size: clamp(38px, 6vw, 72px);\
+            font-weight: 400;\
+            line-height: 1.0;\
+            color: var(--at-black);\
+            margin: 0 0 40px 0;\
+            letter-spacing: -3px;\
+        \}\
+\
+        .at-meta-wrap \{\
+            font-family: var(--font-serif);\
+            font-style: italic;\
+            font-size: 16px;\
+            color: var(--at-gray);\
+            display: flex;\
+            justify-content: center;\
+            gap: 40px;\
+            align-items: center;\
+        \}\
+\
+        .at-meta-divider \{\
+            width: 6px;\
+            height: 6px;\
+            background: var(--at-gold);\
+            transform: rotate(45deg);\
+        \}\
+\
+        /* CONTENT STYLING */\
+        .at-body-content \{\
+            font-family: var(--font-sans);\
+            font-size: 20px;\
+            line-height: 2.2;\
+            color: #1a1a1a;\
+            font-weight: 300;\
+        \}\
+\
+        /* LUXURY DROP CAP */\
+        .at-body-content p:first-of-type::first-letter \{\
+            float: left;\
+            font-family: var(--font-serif);\
+            font-size: 110px;\
+            line-height: 80px;\
+            padding-top: 10px;\
+            padding-right: 15px;\
+            padding-left: 5px;\
+            color: var(--at-gold);\
+        \}\
+\
+        .at-body-content h2 \{\
+            font-family: var(--font-serif);\
+            font-size: 44px;\
+            margin: 80px 0 40px 0;\
+            font-weight: 400;\
+            letter-spacing: -1.5px;\
+            text-align: center;\
+        \}\
+\
+        .at-body-content h2::after \{\
+            content: "";\
+            display: block;\
+            width: 60px;\
+            height: 1px;\
+            background: var(--at-gold);\
+            margin: 20px auto 0;\
+        \}\
+\
+        /* BLOCKQUOTE FLOURISH */\
+        blockquote \{\
+            margin: 60px 40px;\
+            padding: 0;\
+            text-align: center;\
+            position: relative;\
+        \}\
+\
+        blockquote p \{\
+            font-family: var(--font-serif) !important;\
+            font-style: italic;\
+            font-size: 28px !important;\
+            line-height: 1.5 !important;\
+            color: var(--at-dark);\
+        \}\
+\
+        /* HOME EVALUATION CARD */\
+        .at-evaluation-card \{\
+            background: var(--at-dark);\
+            padding: 100px 60px;\
+            margin: 100px 0;\
+            text-align: center;\
+            position: relative;\
+            border: 1px solid rgba(197, 160, 89, 0.5);\
+            outline: 10px solid transparent;\
+            transition: var(--transition);\
+        \}\
+\
+        .at-evaluation-card:hover \{\
+            outline: 1px solid var(--at-gold);\
+            outline-offset: -15px;\
+        \}\
+\
+        .at-evaluation-card h3 \{\
+            font-family: var(--font-serif);\
+            font-size: 48px;\
+            margin-bottom: 25px;\
+            color: #fff;\
+            letter-spacing: -1px;\
+        \}\
+\
+        .at-btn-luxury \{\
+            display: inline-block;\
+            padding: 22px 70px;\
+            background: var(--at-gold);\
+            color: #000;\
+            text-decoration: none;\
+            text-transform: uppercase;\
+            letter-spacing: 4px;\
+            font-size: 12px;\
+            font-family: var(--font-sans);\
+            font-weight: 600;\
+            margin-top: 40px;\
+            transition: var(--transition);\
+        \}\
+\
+        .at-btn-luxury:hover \{\
+            background: #fff;\
+            letter-spacing: 6px;\
+        \}\
+\
+        /* CIRCULAR GOLD SOCIALS */\
+        .at-social-wrap \{\
+            display: flex;\
+            gap: 15px;\
+        \}\
+\
+        .at-social-circle \{\
+            width: 46px;\
+            height: 46px;\
+            border-radius: 50%;\
+            background: var(--at-gold);\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            color: #000;\
+            text-decoration: none;\
+            font-family: var(--font-sans);\
+            font-size: 11px;\
+            font-weight: 600;\
+            transition: var(--transition);\
+        \}\
+\
+        .at-social-circle:hover \{\
+            background: #000;\
+            color: var(--at-gold);\
+            transform: translateY(-5px);\
+        \}\
+\
+        /* ABOUT SECTION */\
+        .at-about-module \{\
+            margin-top: 150px;\
+            padding: 80px;\
+            background: var(--at-soft-bg);\
+            position: relative;\
+            display: flex;\
+            gap: 60px;\
+            align-items: center;\
+        \}\
+\
+        .at-about-img-wrap \{\
+            position: relative;\
+            flex-shrink: 0;\
+        \}\
+\
+        .at-about-img \{\
+            width: 240px;\
+            height: 240px;\
+            border-radius: 50%;\
+            object-fit: cover;\
+            border: 1px solid var(--at-gold);\
+            padding: 8px;\
+            background: #fff;\
+        \}\
+\
+        /* SIDEBAR */\
+        .at-sidebar-widget \{\
+            margin-bottom: 80px;\
+            padding-bottom: 40px;\
+            border-bottom: 1px solid var(--at-border);\
+        \}\
+\
+        .at-widget-label \{\
+            font-family: var(--font-sans);\
+            font-size: 11px;\
+            text-transform: uppercase;\
+            letter-spacing: 4px;\
+            color: var(--at-gold);\
+            margin-bottom: 30px;\
+            display: block;\
+        \}\
+\
+        /* FOOTER */\
+        .at-footer \{\
+            background: var(--at-black);\
+            color: #fff;\
+            padding: 140px 60px 60px 60px;\
+            margin-top: 150px;\
+        \}\
+\
+        .at-footer-grid \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            display: grid;\
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;\
+            gap: 80px;\
+        \}\
+\
+        .at-footer-logo \{\
+            font-family: var(--font-serif);\
+            font-size: 42px;\
+            letter-spacing: 6px;\
+            margin-bottom: 30px;\
+        \}\
+\
+        .at-footer h5 \{\
+            color: var(--at-gold);\
+            letter-spacing: 5px;\
+            font-size: 11px;\
+            margin-bottom: 40px;\
+            font-family: var(--font-sans);\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <!-- ANIMATED BACKGROUND ARCHITECTURE (Traces fast and then Fades Out) -->\
+    <svg class="at-bg-artwork" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">\
+        <path class="at-outline-path" d="M10,60 L10,30 L30,10 L70,10 L90,30 L90,60 M10,30 L90,30 M30,10 L30,60 M70,10 L70,60 M45,30 L45,60 M55,30 L55,60 M10,60 L90,60" />\
+    </svg>\
+\
+    <!-- ARTICLE HEADER -->\
+    <header class="at-header">\
+        <span class="at-eyebrow">The Collective Portfolio</span>\
+        <h1 class="at-title">Staging for the $20M Market: Creating Emotional Connection</h1>\
+        <div class="at-meta-wrap">\
+            <span>By Ruthie Assouline</span>\
+            <div class="at-meta-divider"></div>\
+            <span>Spring Editorial 2024</span>\
+        </div>\
+    </header>\
+\
+    <div class="at-wrapper">\
+        <main>\
+            <div class="at-body-content">\
+                <p>When presenting a property of high distinction, the objective is to transcend the physical structure and engage the soul of the observer. In the ultra-prime Miami Beach sector, a buyer is not merely acquiring a residence; they are securing a curated existence\'97a sanctuary of refined geometry and effortless grace.</p>\
+                \
+                <blockquote>\
+                    <p>"Luxury is not a price point, it is a state of mindfulness applied to every detail of the environment."</p>\
+                </blockquote>\
+\
+                <h2>A Dialogue with the Coast</h2>\
+                <p>We approach our Miami Beach listings through a lens of 'Coastal Sophistication.' This philosophy dictates that every texture\'97from the hand-burnished Venetian plaster to the ethically sourced teak\'97must serve the natural light. It is about creating a dialogue between the internal sanctuary and the horizon beyond.</p>\
+\
+                <!-- LUXURY EVALUATION CTA -->\
+                <div class="at-evaluation-card">\
+                    <div class="at-corner-accent at-top-left"></div>\
+                    <div class="at-corner-accent at-bottom-right"></div>\
+                    <span class="at-eyebrow" style="color:rgba(255,255,255,0.5)">Private Consultation</span>\
+                    <h3>The Value of Distinction</h3>\
+                    <p style="color: #ccc; font-weight: 200; max-width: 600px; margin: 0 auto;">Allow us to provide a bespoke valuation of your real estate portfolio, leveraging our proprietary global data models.</p>\
+                    <a href="#" class="at-btn-luxury">Request Evaluation</a>\
+                </div>\
+\
+                <p>The Assouline Team maintains a standard of excellence that is absolute. By positioning your assets within this editorial framework, we ensure they are not merely seen\'97they are remembered by the world\'92s most discerning collectors.</p>\
+            </div>\
+\
+            <!-- ABOUT THE TEAM SECTION -->\
+            <section class="at-about-module">\
+                <div class="at-corner-accent at-top-left" style="top: 20px; left: 20px;"></div>\
+                <div class="at-about-img-wrap">\
+                    <img src="https://via.placeholder.com/300x300?text=Ruthie" alt="Ruthie Assouline" class="at-about-img">\
+                </div>\
+                <div class="at-about-text">\
+                    <h4 style="font-family: var(--font-serif); font-size: 36px; margin-bottom: 20px;">The Assouline Team</h4>\
+                    <p style="font-size: 16px; color: var(--at-gray); line-height: 1.8;">With over a billion dollars in career transactions, Ruthie and Ethan Assouline have redefined the standard for high-end residential real estate. Their approach combines an architect's eye for detail with a strategist's precision, representing the most significant addresses in the world.</p>\
+                    <div class="at-social-wrap">\
+                        <a href="#" class="at-social-circle">IG</a>\
+                        <a href="#" class="at-social-circle">LI</a>\
+                        <a href="#" class="at-social-circle">FB</a>\
+                        <a href="#" class="at-social-circle">YT</a>\
+                    </div>\
+                </div>\
+            </section>\
+        </main>\
+\
+        <!-- SIDEBAR -->\
+        <aside class="at-sidebar">\
+            <div class="at-sidebar-widget">\
+                <span class="at-widget-label">Quarterly Intel</span>\
+                <h4 style="font-family: var(--font-serif); font-size: 24px; margin-bottom: 15px;">The Miami Prime Report</h4>\
+                <p style="font-family: var(--font-sans); font-size: 14px; color: var(--at-gray); margin-bottom: 25px;">A confidential audit of waterfront performance and off-market activity.</p>\
+                <a href="#" style="color: var(--at-gold); text-transform: uppercase; font-size: 11px; letter-spacing: 3px; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--at-gold); padding-bottom: 5px;">Access Report \uc0\u8594 </a>\
+            </div>\
+\
+            <div class="at-sidebar-widget" style="border: none;">\
+                <span class="at-widget-label">Curated Listing</span>\
+                <div style="background: #111; height: 300px; margin-bottom: 25px; border: 1px solid var(--at-gold); position: relative;">\
+                    <div class="at-corner-accent at-top-left" style="border-width: 0.5px; opacity: 0.5;"></div>\
+                </div>\
+                <h6 style="font-family: var(--font-serif); font-size: 22px; margin: 0;">Villa Positano</h6>\
+                <p style="font-family: var(--font-sans); font-size: 13px; color: var(--at-gold); margin-top: 10px; letter-spacing: 2px;">$32,000,000</p>\
+                <a href="#" class="at-btn-luxury" style="width: 100%; text-align: center; padding: 15px 0; margin-top: 20px;">View Estate</a>\
+            </div>\
+        </aside>\
+    </div>\
+\
+    <!-- LUXURY FOOTER -->\
+    <footer class="at-footer">\
+        <div class="at-footer-grid">\
+            <div>\
+                <div class="at-footer-logo">ASSOULINE <span style="color: var(--at-gold); font-weight: 300;">TEAM</span></div>\
+                <p style="font-size: 14px; color: #555; line-height: 2; padding-right: 60px;">Architects of high-value real estate. We represent the gold standard in Manhattan, Miami, and the Hamptons.</p>\
+                <div class="at-social-wrap" style="margin-top: 30px;">\
+                    <a href="#" class="at-social-circle" style="background: transparent; border: 1px solid #333; color: #fff;">IG</a>\
+                    <a href="#" class="at-social-circle" style="background: transparent; border: 1px solid #333; color: #fff;">LI</a>\
+                    <a href="#" class="at-social-circle" style="background: transparent; border: 1px solid #333; color: #fff;">YT</a>\
+                </div>\
+            </div>\
+            <div>\
+                <h5>TERRITORIES</h5>\
+                <ul style="list-style: none; padding:0; font-size: 13px; color: #666; font-family: var(--font-sans); letter-spacing: 1px;">\
+                    <li style="margin-bottom: 15px;">New York City</li>\
+                    <li style="margin-bottom: 15px;">Miami Beach</li>\
+                    <li style="margin-bottom: 15px;">Palm Beach</li>\
+                    <li style="margin-bottom: 15px;">The Hamptons</li>\
+                </ul>\
+            </div>\
+            <div>\
+                <h5>SERVICES</h5>\
+                <ul style="list-style: none; padding:0; font-size: 13px; color: #666; font-family: var(--font-sans); letter-spacing: 1px;">\
+                    <li style="margin-bottom: 15px;">Asset Acquisition</li>\
+                    <li style="margin-bottom: 15px;">Portfolio Valuation</li>\
+                    <li style="margin-bottom: 15px;">Global Marketing</li>\
+                    <li style="margin-bottom: 15px;">Concierge Design</li>\
+                </ul>\
+            </div>\
+            <div>\
+                <h5>THE JOURNAL</h5>\
+                <p style="font-size: 12px; color: #555; margin-bottom: 25px;">Receive our curated monthly briefing on the global luxury market.</p>\
+                <div style="display: flex; border-bottom: 1px solid #333; padding-bottom: 12px;">\
+                    <input type="email" placeholder="EMAIL ADDRESS" style="background: transparent; border: none; color: #fff; font-family: var(--font-sans); font-size: 11px; flex-grow: 1; outline: none; letter-spacing: 2px;">\
+                    <button style="background: transparent; border: none; cursor: pointer; color: var(--at-gold); font-size: 20px;">\uc0\u8594 </button>\
+                </div>\
+            </div>\
+        </div>\
+        <div style="max-width: 1200px; margin: 80px auto 0; padding-top: 40px; border-top: 1px solid #1a1a1a; display: flex; justify-content: space-between; font-size: 10px; color: #333; text-transform: uppercase; letter-spacing: 3px; font-family: var(--font-sans);">\
+            <span>&copy; 2024 Assouline Team | Compass Real Estate</span>\
+            <span>Exceptional Lives Demand Exceptional Homes</span>\
+        </div>\
+    </footer>\
+\
+</body>\
+</html>}
