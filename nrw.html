@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.8.4.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 1in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0in">
+<font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;!DOCTYPE
+html&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;html
+lang=&quot;en&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;head&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;meta
+name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;link
+href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@200;300;400;600&amp;display=swap&quot;
+rel=&quot;stylesheet&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;style&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+LUXURY DESIGN TOKENS */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">:root
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--at-gold:
+#c5a059;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--at-black:
+#000000;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--at-dark:
+#121212;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--at-gray:
+#888888;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--at-soft-bg:
+#f9f8f6;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--at-border:
+#e2e2e2;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--font-serif:
+'Playfair Display', serif;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--font-sans:
+'Montserrat', sans-serif;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">--transition:
+all 0.6s cubic-bezier(0.19, 1, 0.22, 1);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">body
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background-color:
+#fff;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background-image:
+url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 200 200'
+xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter
+id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise'
+baseFrequency='0.65' numOctaves='3'
+stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25'
+height='100%25' filter='url(%23noiseFilter)'
+opacity='0.03'/%3E%3C/svg%3E&quot;);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">-webkit-font-smoothing:
+antialiased;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+var(--at-black);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">overflow-x:
+hidden;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+ANIMATED ARCHITECTURAL OUTLINE - FASTER FADE */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-bg-artwork
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">position:
+fixed;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">top:
+15%;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">right:
+-5%;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+60vw;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">height:
+auto;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">z-index:
+-1;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">pointer-events:
+none;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+Animation shortened to 5s total */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">animation:
+fadeOutHome 5s ease-in-out forwards;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-outline-path
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">stroke-dasharray:
+1000;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">stroke-dashoffset:
+1000;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+Drawing phase shortened to 2s */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">animation:
+drawLine 2s ease-in-out forwards;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">stroke:
+var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">stroke-width:
+0.4;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">fill:
+none;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">@keyframes
+drawLine {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">to
+{ stroke-dashoffset: 0; }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">@keyframes
+fadeOutHome {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">0%
+{ opacity: 0; transform: translateY(10px); }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">20%
+{ opacity: 0.18; transform: translateY(0); }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">60%
+{ opacity: 0.18; }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">100%
+{ opacity: 0; transform: translateY(-10px); visibility: hidden; }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+ORNAMENTAL ACCENTS */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-corner-accent
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">position:
+absolute;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+40px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">height:
+40px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">border:
+1px solid var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">pointer-events:
+none;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-top-left
+{ top: 0; left: 0; border-right: none; border-bottom: none; }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-bottom-right
+{ bottom: 0; right: 0; border-left: none; border-top: none; }</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+LAYOUT STRUCTURE */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-wrapper
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">max-width:
+1400px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+0 auto;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+100px 60px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+grid;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">grid-template-columns:
+1fr 340px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">gap:
+100px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">@media
+(max-width: 1024px) {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-wrapper
+{ grid-template-columns: 1fr; padding: 60px 25px; gap: 60px; }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-sidebar
+{ display: none; }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-bg-artwork
+{ width: 120vw; top: 10%; right: -10%; }</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+ARTICLE HEADER */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-header
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">text-align:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">max-width:
+1000px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+0 auto 100px auto;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">position:
+relative;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-eyebrow
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-sans);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">text-transform:
+uppercase;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">letter-spacing:
+8px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+10px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-weight:
+600;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+block;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-bottom:
+30px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-title
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-serif);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+clamp(38px, 6vw, 72px);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-weight:
+400;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">line-height:
+1.0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+var(--at-black);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+0 0 40px 0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">letter-spacing:
+-3px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-meta-wrap
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-serif);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-style:
+italic;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+16px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+var(--at-gray);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+flex;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">justify-content:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">gap:
+40px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">align-items:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-meta-divider
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+6px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">height:
+6px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">transform:
+rotate(45deg);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+CONTENT STYLING */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-body-content
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-sans);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+20px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">line-height:
+2.2;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+#1a1a1a;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-weight:
+300;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+LUXURY DROP CAP */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-body-content
+p:first-of-type::first-letter {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">float:
+left;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-serif);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+110px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">line-height:
+80px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding-top:
+10px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding-right:
+15px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding-left:
+5px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-body-content
+h2 {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-serif);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+44px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+80px 0 40px 0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-weight:
+400;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">letter-spacing:
+-1.5px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">text-align:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-body-content
+h2::after {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">content:
+&quot;&quot;;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+block;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+60px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">height:
+1px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+20px auto 0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+BLOCKQUOTE FLOURISH */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">blockquote
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+60px 40px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">text-align:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">position:
+relative;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">blockquote
+p {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-serif) !important;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-style:
+italic;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+28px !important;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">line-height:
+1.5 !important;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+var(--at-dark);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+HOME EVALUATION CARD */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-evaluation-card
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+var(--at-dark);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+100px 60px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+100px 0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">text-align:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">position:
+relative;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">border:
+1px solid rgba(197, 160, 89, 0.5);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">outline:
+10px solid transparent;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">transition:
+var(--transition);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-evaluation-card:hover
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">outline:
+1px solid var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">outline-offset:
+-15px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-evaluation-card
+h3 {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-serif);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+48px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-bottom:
+25px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+#fff;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">letter-spacing:
+-1px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-btn-luxury
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+inline-block;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+22px 70px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+#000;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">text-decoration:
+none;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">text-transform:
+uppercase;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">letter-spacing:
+4px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+12px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-sans);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-weight:
+600;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-top:
+40px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">transition:
+var(--transition);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-btn-luxury:hover
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+#fff;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">letter-spacing:
+6px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+CIRCULAR GOLD SOCIALS */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-social-wrap
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+flex;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">gap:
+15px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-social-circle
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+46px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">height:
+46px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">border-radius:
+50%;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+flex;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">align-items:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">justify-content:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+#000;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">text-decoration:
+none;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-sans);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+11px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-weight:
+600;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">transition:
+var(--transition);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-social-circle:hover
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+#000;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">transform:
+translateY(-5px);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+ABOUT SECTION */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-about-module
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-top:
+150px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+80px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+var(--at-soft-bg);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">position:
+relative;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+flex;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">gap:
+60px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">align-items:
+center;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-about-img-wrap
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">position:
+relative;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">flex-shrink:
+0;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-about-img
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">width:
+240px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">height:
+240px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">border-radius:
+50%;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">object-fit:
+cover;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">border:
+1px solid var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+8px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+#fff;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+SIDEBAR */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-sidebar-widget
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-bottom:
+80px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding-bottom:
+40px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">border-bottom:
+1px solid var(--at-border);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-widget-label
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-sans);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+11px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">text-transform:
+uppercase;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">letter-spacing:
+4px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-bottom:
+30px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+block;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">/*
+FOOTER */</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-footer
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">background:
+var(--at-black);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+#fff;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">padding:
+140px 60px 60px 60px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-top:
+150px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-footer-grid
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">max-width:
+1200px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin:
+0 auto;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">display:
+grid;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">grid-template-columns:
+2fr 1fr 1fr 1.5fr;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">gap:
+80px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-footer-logo
+{</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-serif);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+42px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">letter-spacing:
+6px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-bottom:
+30px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">.at-footer
+h5 {</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">color:
+var(--at-gold);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">letter-spacing:
+5px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-size:
+11px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">margin-bottom:
+40px;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">font-family:
+var(--font-sans);</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">}</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/style&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/head&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;body&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;!--
+ANIMATED BACKGROUND ARCHITECTURE (Traces fast and then Fades Out) --&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;svg
+class=&quot;at-bg-artwork&quot; viewBox=&quot;0 0 100 80&quot;
+xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;path
+class=&quot;at-outline-path&quot; d=&quot;M10,60 L10,30 L30,10 L70,10
+L90,30 L90,60 M10,30 L90,30 M30,10 L30,60 M70,10 L70,60 M45,30 L45,60
+M55,30 L55,60 M10,60 L90,60&quot; /&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/svg&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;!--
+ARTICLE HEADER --&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;header
+class=&quot;at-header&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;span
+class=&quot;at-eyebrow&quot;&gt;The Collective Portfolio&lt;/span&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h1
+class=&quot;at-title&quot;&gt;Staging for the $20M Market: Creating
+Emotional Connection&lt;/h1&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-meta-wrap&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;span&gt;By
+Ruthie Assouline&lt;/span&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-meta-divider&quot;&gt;&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;span&gt;Spring
+Editorial 2024&lt;/span&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/header&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-wrapper&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;main&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-body-content&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;p&gt;When
+presenting a property of high distinction, the objective is to
+transcend the physical structure and engage the soul of the observer.
+In the ultra-prime Miami Beach sector, a buyer is not merely
+acquiring a residence; they are securing a curated existence—a
+sanctuary of refined geometry and effortless grace.&lt;/p&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              </font>
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                             
+<font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;blockquote&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;p&gt;&quot;Luxury
+is not a price point, it is a state of mindfulness applied to every
+detail of the environment.&quot;&lt;/p&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                             
+<font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/blockquote&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h2&gt;A
+Dialogue with the Coast&lt;/h2&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;p&gt;We
+approach our Miami Beach listings through a lens of 'Coastal
+Sophistication.' This philosophy dictates that every texture—from
+the hand-burnished Venetian plaster to the ethically sourced
+teak—must serve the natural light. It is about creating a dialogue
+between the internal sanctuary and the horizon beyond.&lt;/p&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;!--
+LUXURY EVALUATION CTA --&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-evaluation-card&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-corner-accent at-top-left&quot;&gt;&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-corner-accent at-bottom-right&quot;&gt;&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;span
+class=&quot;at-eyebrow&quot;
+style=&quot;color:rgba(255,255,255,0.5)&quot;&gt;Private
+Consultation&lt;/span&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h3&gt;The
+Value of Distinction&lt;/h3&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;p
+style=&quot;color: #ccc; font-weight: 200; max-width: 600px; margin:
+0 auto;&quot;&gt;Allow us to provide a bespoke valuation of your real
+estate portfolio, leveraging our proprietary global data models.&lt;/p&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;a
+href=&quot;#&quot; class=&quot;at-btn-luxury&quot;&gt;Request
+Evaluation&lt;/a&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;p&gt;The
+Assouline Team maintains a standard of excellence that is absolute.
+By positioning your assets within this editorial framework, we ensure
+they are not merely seen—they are remembered by the world’s most
+discerning collectors.&lt;/p&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;!--
+ABOUT THE TEAM SECTION --&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;section
+class=&quot;at-about-module&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-corner-accent at-top-left&quot; style=&quot;top: 20px;
+left: 20px;&quot;&gt;&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-about-img-wrap&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;img
+src=&quot;https://via.placeholder.com/300x300?text=Ruthie&quot;
+alt=&quot;Ruthie Assouline&quot; class=&quot;at-about-img&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-about-text&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h4
+style=&quot;font-family: var(--font-serif); font-size: 36px;
+margin-bottom: 20px;&quot;&gt;The Assouline Team&lt;/h4&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;p
+style=&quot;font-size: 16px; color: var(--at-gray); line-height:
+1.8;&quot;&gt;With over a billion dollars in career transactions,
+Ruthie and Ethan Assouline have redefined the standard for high-end
+residential real estate. Their approach combines an architect's eye
+for detail with a strategist's precision, representing the most
+significant addresses in the world.&lt;/p&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-social-wrap&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;a
+href=&quot;#&quot; class=&quot;at-social-circle&quot;&gt;IG&lt;/a&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;a
+href=&quot;#&quot; class=&quot;at-social-circle&quot;&gt;LI&lt;/a&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;a
+href=&quot;#&quot; class=&quot;at-social-circle&quot;&gt;FB&lt;/a&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+          <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;a
+href=&quot;#&quot; class=&quot;at-social-circle&quot;&gt;YT&lt;/a&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/section&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/main&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;!--
+SIDEBAR --&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;aside
+class=&quot;at-sidebar&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-sidebar-widget&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;span
+class=&quot;at-widget-label&quot;&gt;Quarterly Intel&lt;/span&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h4
+style=&quot;font-family: var(--font-serif); font-size: 24px;
+margin-bottom: 15px;&quot;&gt;The Miami Prime Report&lt;/h4&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;p
+style=&quot;font-family: var(--font-sans); font-size: 14px; color:
+var(--at-gray); margin-bottom: 25px;&quot;&gt;A confidential audit of
+waterfront performance and off-market activity.&lt;/p&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;a
+href=&quot;#&quot; style=&quot;color: var(--at-gold); text-transform:
+uppercase; font-size: 11px; letter-spacing: 3px; font-weight: 600;
+text-decoration: none; border-bottom: 1px solid var(--at-gold);
+padding-bottom: 5px;&quot;&gt;Access Report →&lt;/a&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-sidebar-widget&quot; style=&quot;border: none;&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;span
+class=&quot;at-widget-label&quot;&gt;Curated Listing&lt;/span&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+style=&quot;background: #111; height: 300px; margin-bottom: 25px;
+border: 1px solid var(--at-gold); position: relative;&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-corner-accent at-top-left&quot; style=&quot;border-width:
+0.5px; opacity: 0.5;&quot;&gt;&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h6
+style=&quot;font-family: var(--font-serif); font-size: 22px; margin:
+0;&quot;&gt;Villa Positano&lt;/h6&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;p
+style=&quot;font-family: var(--font-sans); font-size: 13px; color:
+var(--at-gold); margin-top: 10px; letter-spacing:
+2px;&quot;&gt;$32,000,000&lt;/p&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;a
+href=&quot;#&quot; class=&quot;at-btn-luxury&quot; style=&quot;width:
+100%; text-align: center; padding: 15px 0; margin-top: 20px;&quot;&gt;View
+Estate&lt;/a&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/aside&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;!--
+LUXURY FOOTER --&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;footer
+class=&quot;at-footer&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-footer-grid&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-footer-logo&quot;&gt;ASSOULINE &lt;span style=&quot;color:
+var(--at-gold); font-weight: 300;&quot;&gt;TEAM&lt;/span&gt;&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;p
+style=&quot;font-size: 14px; color: #555; line-height: 2;
+padding-right: 60px;&quot;&gt;Architects of high-value real estate.
+We represent the gold standard in Manhattan, Miami, and the
+Hamptons.&lt;/p&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+class=&quot;at-social-wrap&quot; style=&quot;margin-top: 30px;&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;a
+href=&quot;#&quot; class=&quot;at-social-circle&quot;
+style=&quot;background: transparent; border: 1px solid #333; color:
+#fff;&quot;&gt;IG&lt;/a&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;a
+href=&quot;#&quot; class=&quot;at-social-circle&quot;
+style=&quot;background: transparent; border: 1px solid #333; color:
+#fff;&quot;&gt;LI&lt;/a&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;a
+href=&quot;#&quot; class=&quot;at-social-circle&quot;
+style=&quot;background: transparent; border: 1px solid #333; color:
+#fff;&quot;&gt;YT&lt;/a&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                             
+<font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h5&gt;TERRITORIES&lt;/h5&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;ul
+style=&quot;list-style: none; padding:0; font-size: 13px; color:
+#666; font-family: var(--font-sans); letter-spacing: 1px;&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;li
+style=&quot;margin-bottom: 15px;&quot;&gt;New York City&lt;/li&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;li
+style=&quot;margin-bottom: 15px;&quot;&gt;Miami Beach&lt;/li&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;li
+style=&quot;margin-bottom: 15px;&quot;&gt;Palm Beach&lt;/li&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;li
+style=&quot;margin-bottom: 15px;&quot;&gt;The Hamptons&lt;/li&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/ul&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                             
+<font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h5&gt;SERVICES&lt;/h5&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;ul
+style=&quot;list-style: none; padding:0; font-size: 13px; color:
+#666; font-family: var(--font-sans); letter-spacing: 1px;&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;li
+style=&quot;margin-bottom: 15px;&quot;&gt;Asset Acquisition&lt;/li&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;li
+style=&quot;margin-bottom: 15px;&quot;&gt;Portfolio Valuation&lt;/li&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;li
+style=&quot;margin-bottom: 15px;&quot;&gt;Global Marketing&lt;/li&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;li
+style=&quot;margin-bottom: 15px;&quot;&gt;Concierge Design&lt;/li&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/ul&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;h5&gt;THE
+JOURNAL&lt;/h5&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;p
+style=&quot;font-size: 12px; color: #555; margin-bottom:
+25px;&quot;&gt;Receive our curated monthly briefing on the global
+luxury market.&lt;/p&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+style=&quot;display: flex; border-bottom: 1px solid #333;
+padding-bottom: 12px;&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;input
+type=&quot;email&quot; placeholder=&quot;EMAIL ADDRESS&quot;
+style=&quot;background: transparent; border: none; color: #fff;
+font-family: var(--font-sans); font-size: 11px; flex-grow: 1;
+outline: none; letter-spacing: 2px;&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                                   
+  <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;button
+style=&quot;background: transparent; border: none; cursor: pointer;
+color: var(--at-gold); font-size: 20px;&quot;&gt;→&lt;/button&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;div
+style=&quot;max-width: 1200px; margin: 80px auto 0; padding-top:
+40px; border-top: 1px solid #1a1a1a; display: flex; justify-content:
+space-between; font-size: 10px; color: #333; text-transform:
+uppercase; letter-spacing: 3px; font-family: var(--font-sans);&quot;&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;span&gt;&amp;copy;
+2024 Assouline Team | Compass Real Estate&lt;/span&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+                      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;span&gt;Exceptional
+Lives Demand Exceptional Homes&lt;/span&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+              <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/div&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"> 
+      <font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/footer&gt;</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/body&gt;</font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font color="#000000"><font face="Helvetica, serif"><font size="3" style="font-size: 12pt">&lt;/html&gt;</font></font></font></p>
+</body>
+</html>
